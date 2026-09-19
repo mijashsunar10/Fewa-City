@@ -1,0 +1,114 @@
+.hospital-footer {
+  background: linear-gradient(180deg, #0b3d1f, #09301a);
+  padding: 50px 20px 0;
+  font-family: 'Poppins', sans-serif;
+  color: #e0f2f1;
+}
+
+.footer-container {
+  max-width: 1300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 35px;
+}
+
+.footer-box img {
+  max-width: 140px;
+}
+
+.footer-box h4 {
+  font-size: 20px;
+  color: #7ef4a1;
+  margin-bottom: 12px;
+}
+
+.footer-box p,
+.footer-box ul li a {
+  font-size: 14px;
+  color: #e0f2f1;
+  line-height: 1.7;
+  font-weight: 500;
+}
+
+.footer-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-box ul li {
+  margin-bottom: 8px;
+}
+
+.footer-box ul li a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-box ul li a:hover {
+  color: #a3f7b5;
+  padding-left: 6px;
+}
+
+/* ===== SOCIAL ICONS ===== */
+.socials {
+  margin-top: 18px;
+}
+
+.socials a.social {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 36px;
+  margin-right: 10px;
+  background: #156619;
+  color: #ffffff;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.socials a.social:hover {
+  background: #43a047;
+  transform: translateY(-3px);
+}
+
+/* ===== FOOTER BOTTOM ===== */
+.footer-bottom {
+  background: #2565AF;
+  text-align: center;
+  padding: 14px 10px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.footer-bottom a {
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.footer-bottom a:hover {
+  opacity: 0.9;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width: 900px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+  }
+
+  .footer-box img {
+    margin: 0 auto 12px;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: center;
+  }
+}
