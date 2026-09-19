@@ -9,6 +9,7 @@ import Services from './pages/Services'
 import CollegeProgramme from './pages/CollegeProgramme'
 import Gallery from './pages/Gallery'
 import ContactUs from './pages/ContactUs'
+import FewaCityHospitalQR from './pages/FewaCityHospitalQR'
 import NotFound from './pages/NotFound'
 
 function App() {
@@ -16,6 +17,9 @@ function App() {
     <>
       <ScrollToTop />
       <Routes>
+        {/* Standalone page, no header/footer */}
+        <Route path="/fewa-city-hospital" element={<FewaCityHospitalQR />} />
+
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<AboutUs />} />
