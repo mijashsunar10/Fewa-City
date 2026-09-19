@@ -1,0 +1,194 @@
+.department-section {
+  --dept-green: #166534;
+  --dept-orange: #d97706;
+  padding: 60px 20px;
+  background: #f9fafb;
+}
+
+.department-container {
+  max-width: 1400px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+/* LEFT */
+.department-list {
+  background: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dept-dropdown {
+  display: none;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  font-weight: 600;
+  padding: 12px;
+}
+
+.dept-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dept-btn {
+  padding: 14px;
+  border: none;
+  background: #fff;
+  color: #000;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .3s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+  font-family: inherit;
+  font-size: 15px;
+}
+
+.dept-btn:hover {
+  background: var(--dept-green);
+  color: #fff;
+}
+
+.dept-btn.active {
+  background: var(--dept-green);
+  color: #fff;
+}
+
+.dept-text h2 {
+  color: var(--dept-green);
+  margin-bottom: 12px;
+}
+
+.dept-text p {
+  line-height: 1.8;
+  color: #374151;
+  font-size: 15px;
+}
+
+.dept-points {
+  margin-top: 15px;
+  padding-left: 20px;
+  list-style-type: disc;
+  color: #374151;
+  line-height: 1.8;
+}
+
+.dept-points li {
+  margin-bottom: 8px;
+}
+
+/* RIGHT */
+.department-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+}
+
+/* TOP */
+.dept-top {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.dept-images {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.dept-images img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* DOCTORS */
+.dept-doctors h3 {
+  border-left: 5px solid var(--dept-orange);
+  padding-left: 12px;
+  margin-bottom: 20px;
+}
+
+.doctor-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.doctor-card {
+  background: #f9fafb;
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+  border: 1px solid #e5e7eb;
+}
+
+.doctor-card img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.doctor-card span {
+  color: var(--dept-orange);
+}
+
+.book-btn {
+  display: block;
+  margin-top: 12px;
+  padding: 10px;
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+  color: #fff;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.book-btn:hover {
+  background: linear-gradient(135deg, #15803d, #22c55e);
+}
+
+/* RESPONSIVE */
+@media(max-width:900px) {
+  .department-container {
+    grid-template-columns: 1fr;
+  }
+
+  .dept-top {
+    grid-template-columns: 1fr;
+  }
+
+  .doctor-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dept-dropdown {
+    display: block;
+  }
+
+  .dept-buttons {
+    display: none;
+  }
+}
