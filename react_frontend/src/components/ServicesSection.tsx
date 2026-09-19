@@ -3,22 +3,22 @@ import './ServicesSection.css'
 
 const features = [
   {
-    img: '/services/lab.png',
+    img: '/services/laboratory/lab.jpg',
     title: 'Laboratory',
     description: 'Advanced laboratories for accurate medical testing and analysis. Supporting reliable diagnosis and patient care.',
   },
   {
-    img: '/services/xray.png',
+    img: '/services/x-ray/xray.jpg',
     title: 'X-Ray',
     description: 'Digital X-ray imaging for fast and precise diagnosis. Ensures safety with minimal radiation exposure.',
   },
   {
-    img: '/services/phramacist.png',
+    img: '/services/pharmacy/phramacy.jpg',
     title: 'Pharmacy',
     description: 'Well-organized pharmacy with essential medicines available. Ensuring safe usage and proper guidance.',
   },
   {
-    img: '/services/icu.png',
+    img: '/services/icu/icu.avif',
     title: 'ICU',
     description: 'Advanced intensive care with continuous patient monitoring. Managed by skilled critical care professionals.',
   },
