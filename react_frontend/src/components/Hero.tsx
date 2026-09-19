@@ -29,7 +29,7 @@ function Hero() {
 
         <div className="hero-actions">
           <a href="#appointment" className="landing-btn primary">Book Appointment</a>
-          <a href="#services" className="landing-btn secondary">Our Services</a>
+          <a href="#services-section" className="landing-btn secondary">Our Services</a>
         </div>
       </div>
     </section>

@@ -8,7 +8,7 @@ function Footer() {
         <div className="footer-container">
           {/* LOGO / ABOUT */}
           <div className="footer-box">
-            <img src="https://fch.com.np/wp-content/uploads/2026/02/fewa-city.png" alt="Fewa City Hospital" />
+            <img src="/logo/image.png" alt="Fewa City Hospital" />
             <p>
               We deliver quality healthcare services at affordable rates. Located in Gandaki Province, we cater to
               the diverse healthcare needs of the entire region.

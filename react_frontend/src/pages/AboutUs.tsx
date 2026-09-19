@@ -1,9 +1,12 @@
+import AboutSection from '../components/AboutSection'
+import StatsSection from '../components/StatsSection'
+
 function AboutUs() {
   return (
-    <section style={{ padding: '60px 20px', maxWidth: 1300, margin: '0 auto' }}>
-      <h1>About Us</h1>
-      <p>Learn more about Fewa City Hospital Pvt. Ltd.</p>
-    </section>
+    <>
+      <AboutSection showButton={false} />
+      <StatsSection />
+    </>
   )
 }
 

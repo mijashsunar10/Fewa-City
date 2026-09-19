@@ -34,7 +34,7 @@ function Header() {
       <div className="middle-bar">
         <div className="container middle-flex">
           <div className="logo-group">
-            <img src="https://fch.com.np/wp-content/uploads/2026/02/Hospitalfewa.png" alt="Fewa City Hospital logo" />
+            <img src="/logo/image.png" alt="Fewa City Hospital logo" />
             <div className="hospital-text">
               <span className="hospital-name">FEWA CITY</span>
               <span className="hospital-sub">Hospital Pvt. Ltd.</span>
@@ -87,7 +87,7 @@ function Header() {
       <nav className={`navbar${sticky ? ' sticky' : ''}`}>
         <div className="mobile-header">
           <div className="mobile-logo-group">
-            <img src="https://fch.com.np/wp-content/uploads/2026/02/fewa-city.png" alt="Fewa City Hospital logo" />
+            <img src="/logo/image.png" alt="Fewa City Hospital logo" />
             <div className="mobile-hospital-text">
               <span className="mobile-hospital-name">FEWA CITY</span>
               <span className="mobile-hospital-sub">Hospital Pvt. Ltd.</span>
