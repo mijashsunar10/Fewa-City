@@ -1,0 +1,380 @@
+/* HEADING */
+.fewa-heading {
+  color: var(--dark-green);
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  padding: 15px;
+}
+
+/* =========================
+PROGRAM CARDS
+========================= */
+
+.program-cards-section{
+  --college-green:#156619;
+  padding:40px 20px;
+  background:#eef6f0;
+}
+
+.program-cards-container{
+  max-width:1300px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+}
+
+.program-main-card{
+  background:#ffffff;
+  border-radius:24px;
+  overflow:hidden;
+  text-decoration:none;
+  border:1px solid #dbe7dd;
+  transition:0.35s;
+  box-shadow:0 10px 30px rgba(0,0,0,0.05);
+  display:block;
+}
+
+.program-main-card:hover{
+  transform:translateY(-8px);
+}
+
+.program-image{
+  height:240px;
+  overflow:hidden;
+}
+
+.program-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:0.5s;
+}
+
+.program-main-card:hover img{
+  transform:scale(1.05);
+}
+
+.program-card-top,
+.program-main-card h2,
+.program-main-card p,
+.program-details,
+.program-link{
+  padding-left:28px;
+  padding-right:28px;
+}
+
+.program-card-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-top:18px;
+}
+
+.program-icon{
+  width:60px;
+  height:60px;
+  background:#e8f5ea;
+  border-radius:16px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:28px;
+}
+
+.program-badge{
+  background:#e8f5ea;
+  color:var(--college-green);
+  padding:7px 14px;
+  border-radius:999px;
+  font-size:12px;
+  font-weight:700;
+}
+
+.program-main-card h2{
+  margin-top:22px;
+  font-size:28px;
+  color:#1f2937;
+}
+
+.program-main-card p{
+  margin-top:14px;
+  color:#6b7280;
+  line-height:1.8;
+}
+
+.program-details{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  margin-top:22px;
+}
+
+.program-details div{
+  background:#f8faf8;
+  border:1px solid #e5ece7;
+  padding:14px;
+  border-radius:12px;
+  font-size:14px;
+}
+
+.program-link{
+  padding-bottom:30px;
+  margin-top:24px;
+  color:var(--college-green);
+  font-weight:700;
+}
+
+/* =========================
+DETAIL SECTIONS
+========================= */
+
+.program-detail-section{
+  --college-green:#156619;
+  padding:100px 20px;
+  background:#fff;
+}
+
+.program-detail-section.alt-bg{
+  background:linear-gradient(180deg,#ffffff,#eef6f0);
+}
+
+.detail-container{
+  max-width:1300px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:70px;
+  align-items:center;
+}
+
+.detail-image{
+  height:650px;
+  border-radius:28px;
+  overflow:hidden;
+  box-shadow:0 20px 40px rgba(0,0,0,0.08);
+}
+
+.detail-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.detail-badge{
+  display:inline-block;
+  background:#e8f5ea;
+  color:var(--college-green);
+  padding:8px 16px;
+  border-radius:999px;
+  font-size:13px;
+  font-weight:700;
+  margin-bottom:20px;
+}
+
+.detail-content h2{
+  font-size:52px;
+  line-height:1.2;
+  margin-bottom:24px;
+  color:var(--college-green);
+}
+
+.detail-content p{
+  color:#6b7280;
+  line-height:1.9;
+  margin-bottom:18px;
+  font-size:16px;
+}
+
+.detail-info-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px;
+  margin-top:35px;
+}
+
+.detail-info-grid div{
+  background:#fff;
+  border:1px solid #e7ece8;
+  border-radius:16px;
+  padding:18px;
+}
+
+.stats-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+  margin-top:35px;
+}
+
+.stat-card{
+  background:#fff;
+  border:1px solid #e7ece8;
+  border-radius:22px;
+  padding:28px;
+  text-align:center;
+}
+
+.stat-card h3{
+  font-size:34px;
+  margin-bottom:10px;
+  color:var(--college-green);
+}
+
+.stat-card p{
+  margin:0;
+}
+
+.stat-card.primary{
+  background:var(--college-green);
+  border:none;
+}
+
+.stat-card.primary h3,
+.stat-card.primary p{
+  color:#fff;
+}
+
+/* =========================
+OFFER SECTION
+========================= */
+
+.offer-section{
+  background:linear-gradient(180deg,#ffffff 0%, #eef8f1 100%);
+  padding:40px 20px;
+}
+
+.offer-section .offer-container{
+  max-width:1200px;
+  margin:auto;
+}
+
+.offer-section .section-header{
+  text-align:center;
+  max-width:800px;
+  margin:0 auto 70px;
+}
+
+.offer-section .section-header h2{
+  font-size:42px;
+  color:#156619;
+  margin-bottom:12px;
+  position:relative;
+  font-weight:700;
+}
+
+.offer-section .section-header h2::after{
+  content:"";
+  width:70px;
+  height:4px;
+  background:#156619;
+  display:block;
+  margin:14px auto 0;
+  border-radius:10px;
+}
+
+.offer-section .section-header p{
+  color:#6b7280;
+  font-size:18px;
+  max-width:640px;
+  margin:18px auto 0;
+  line-height:1.6;
+}
+
+.offer-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+}
+
+.offer-card{
+  background:#ffffff;
+  padding:38px 30px;
+  border-radius:24px;
+  box-shadow:0 18px 40px rgba(0,0,0,0.08);
+  transition:0.35s ease;
+  text-align:center;
+}
+
+.offer-card i{
+  font-size:38px;
+  color:#156619;
+  margin-bottom:20px;
+}
+
+.offer-card h4{
+  font-size:22px;
+  margin-bottom:12px;
+  color:#1f2937;
+  font-weight:600;
+}
+
+.offer-card p{
+  color:#6b7280;
+  line-height:1.65;
+  font-size:16px;
+}
+
+.offer-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 30px 60px rgba(0,0,0,0.12);
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media(max-width:992px){
+  .program-cards-container{
+    grid-template-columns:1fr;
+  }
+
+  .detail-container{
+    grid-template-columns:1fr;
+    gap:40px;
+  }
+
+  .right-layout .detail-image{
+    order:-1;
+  }
+
+  .detail-content h2{
+    font-size:38px;
+  }
+
+  .detail-image{
+    height:420px;
+  }
+}
+
+@media(max-width:768px){
+  .offer-section{
+    padding:60px 15px;
+  }
+
+  .offer-section .section-header h2{
+    font-size:36px;
+  }
+
+  .offer-section .section-header p{
+    font-size:16px;
+  }
+}
+
+@media(max-width:600px){
+  .program-main-card h2{
+    font-size:24px;
+  }
+
+  .detail-content h2{
+    font-size:32px;
+  }
+
+  .detail-info-grid,
+  .stats-grid,
+  .program-details{
+    grid-template-columns:1fr;
+  }
+}
