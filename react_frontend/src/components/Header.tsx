@@ -33,14 +33,14 @@ function Header() {
       {/* MIDDLE BAR */}
       <div className="middle-bar">
         <div className="container middle-flex">
-          <div className="logo-group">
+          <Link to="/" className="logo-group">
             <img src="/logo/image.png" alt="Fewa City Hospital logo" />
             <div className="hospital-text">
               <span className="hospital-name">FEWA CITY</span>
               <span className="hospital-sub">Hospital Pvt. Ltd.</span>
               <span className="location">Pokhara-09, Nagdhunga</span>
             </div>
-          </div>
+          </Link>
 
           <div className="quick-actions">
             <a
@@ -86,13 +86,13 @@ function Header() {
       {/* NAVBAR */}
       <nav className={`navbar${sticky ? ' sticky' : ''}`}>
         <div className="mobile-header">
-          <div className="mobile-logo-group">
+          <Link to="/" className="mobile-logo-group" onClick={() => setMenuOpen(false)}>
             <img src="/logo/image.png" alt="Fewa City Hospital logo" />
             <div className="mobile-hospital-text">
               <span className="mobile-hospital-name">FEWA CITY</span>
               <span className="mobile-hospital-sub">Hospital Pvt. Ltd.</span>
             </div>
-          </div>
+          </Link>
 
           <div className="mobile-toggle" onClick={() => setMenuOpen((open) => !open)}>
             <i className="fa-solid fa-bars"></i>

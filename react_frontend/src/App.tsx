@@ -1,4 +1,5 @@
 import { Route, Routes } from 'react-router-dom'
+import ScrollToTop from './components/ScrollToTop'
 import MainLayout from './layouts/MainLayout'
 import Home from './pages/Home'
 import AboutUs from './pages/AboutUs'
@@ -12,19 +13,22 @@ import NotFound from './pages/NotFound'
 
 function App() {
   return (
-    <Routes>
-      <Route element={<MainLayout />}>
-        <Route path="/" element={<Home />} />
-        <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/department" element={<Departments />} />
-        <Route path="/doctors" element={<Doctors />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/college-programme" element={<CollegeProgramme />} />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/contact-us" element={<ContactUs />} />
-        <Route path="*" element={<NotFound />} />
-      </Route>
-    </Routes>
+    <>
+      <ScrollToTop />
+      <Routes>
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/department" element={<Departments />} />
+          <Route path="/doctors" element={<Doctors />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/college-programme" element={<CollegeProgramme />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="*" element={<NotFound />} />
+        </Route>
+      </Routes>
+    </>
   )
 }
 

@@ -28,7 +28,14 @@ function Hero() {
         </p>
 
         <div className="hero-actions">
-          <a href="#appointment" className="landing-btn primary">Book Appointment</a>
+          <a
+            href="https://wa.me/9779765940555?text=Hello%20I%20want%20to%20book%20an%20appointment"
+            target="_blank"
+            rel="noreferrer"
+            className="landing-btn primary"
+          >
+            Book Appointment
+          </a>
           <a href="#services-section" className="landing-btn secondary">Our Services</a>
         </div>
       </div>

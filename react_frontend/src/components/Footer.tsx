@@ -41,7 +41,7 @@ function Footer() {
             </p>
             <p>
               🗺️{' '}
-              <a style={{ color: 'white' }} href="https://goo.gl/maps/fewacityhospital" target="_blank" rel="noreferrer">
+              <a style={{ color: 'white' }} href="https://www.google.com/maps?q=Fewa%20City%20Hospital%20Pokhara" target="_blank" rel="noreferrer">
                 View on Map
               </a>
             </p>
